@@ -46,6 +46,11 @@ body {
     padding-bottom: 40px;
 }
 
+#byfx-landing {
+    max-width: 500px; 
+    width: 100vw;
+}
+
 .email-icon {
     display: block;
     margin-left: auto;
@@ -67,4 +72,10 @@ footer {
     color: rgb(44, 44, 44);
     text-align: center;
     padding: 4px;
+}
+
+@media only screen and (max-height: 550px) {
+    #byfx-landing  {
+      max-width: 200px;
+    }
 }
