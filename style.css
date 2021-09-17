@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Abel;
+    src: url(content/Abel/Abel-Regular.ttf);
+}
+
+:root {
+    --object-bg-color: rgba(17, 17, 17, 1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: Abel;
+    /* scrollbar-width: none;
+    overflow: hidden; */
+}
+
+#coming-soon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.email-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    padding-top: 16px;
+    transition: 0.2s;
+}
+
+.email-icon:hover {
+    opacity: 0.5;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 4px;
+}
