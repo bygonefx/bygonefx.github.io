@@ -4,7 +4,7 @@
 }
 
 :root {
-    --object-bg-color: rgba(17, 17, 17, 1);
+    --object-bg-color: rgb(24, 24, 24);
 }
 
 * {
@@ -19,7 +19,7 @@
 } */
 
 body {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: Abel;
     /* scrollbar-width: none;
@@ -33,7 +33,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .center {
@@ -70,8 +70,9 @@ footer {
     bottom: 0;
     width: 100%;
     color: rgb(44, 44, 44);
-    text-align: center;
-    padding: 4px;
+    text-align: right;
+    padding-bottom: 4px;
+    padding-right: 8px;
 }
 
 @media only screen and (max-height: 550px) {
