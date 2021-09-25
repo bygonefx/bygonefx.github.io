@@ -12,7 +12,7 @@ var b = function () {
   H = c.height = w.innerHeight;
   HW = W / 2;
   HH = H / 2;
-  diameter = 40;
+  diameter = 120;
 };
 
 var f = function (t) {
@@ -28,10 +28,10 @@ var f = function (t) {
         var index = i * W + j;
         C.globalAlpha = m.tan(index * index - t);
         C.fillRect(
-          m.tan(i * j - m.sin(index + k / 100) + t) * j + HW - diameter / 20,
+          m.tan(i * j - m.sin(index + k / 100) + t) * j + HW - diameter / 2,
           i,
-          m.tan(index + i / j + t + k / 100) / 2 * diameter / 20,
-          m.tan(index * index - t) * diameter / 20
+          m.tan(index + i / j + t + k / 100) / 2 * diameter / 2,
+          m.tan(index * index - t) * diameter / 2
         );
       }
     }
