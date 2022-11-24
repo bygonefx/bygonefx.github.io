@@ -11,7 +11,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     color: white;
     font-family: Abel;
     scrollbar-width: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 canvas {
@@ -27,6 +27,7 @@ canvas {
     left: 0; 
     top: 0;
     background-color: black;
+    z-index: -999;
 }
 
 #coming-soon {
@@ -35,17 +36,25 @@ canvas {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
     opacity: 0.6;
 }
 
 .center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 48px;
-    padding-bottom: 48px;
-    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video-container {
+    max-width: 800px;
+    width: 80vw;
+    max-height: 420px;
+    height: 50vh;
+    min-height: 280px;
+    margin-bottom: 24px;
 }
 
 #byfx-landing {
@@ -61,6 +70,7 @@ canvas {
     width: 32px;
     padding-top: 16px;
     transition: 0.2s;
+    margin-bottom: 52px;
 }
 
 .email-icon:hover {
@@ -73,7 +83,7 @@ footer {
     bottom: 0;
     width: 100%;
     color: rgb(44, 44, 44);
-    text-align: center;
+    text-align: right;
     padding: 4px;
 }
 
@@ -81,7 +91,7 @@ footer {
     #byfx-landing  {
       max-width: 75vh;
     }
-    footer {
-        text-align: right;
+    .video-container {
+        height: 50vh;
     }
 }
